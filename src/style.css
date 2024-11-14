@@ -1,0 +1,45 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .bg-x {
+      @apply bg-blue-500;
+  }
+
+  .bg-y {
+      @apply bg-fuchsia-500;
+  }
+
+  .border-z {
+      @apply border-2 border-green-500;
+  }
+
+  .bg-template {
+    background-image: url("/stripe_bg.png");
+  }
+
+}
+
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+#app {
+  max-width: 1920px;
+  margin: 0 auto;
+  text-align: center;
+}
